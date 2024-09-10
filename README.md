@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad1XITJKT1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="my-button" onclick="playSoundAndRedirect()">Klik Disini</button></button>
+    
+    <audio id="click-sound" src="Ok Sound Effect.mp3"></audio>
+    
+    <script>
+        function playSoundAndRedirect() {
+            var sound = document.getElementById ('click-sound');
+            sound.play();
+            sound.onended = function() {
+                window.location.href ="https://drive.google.com/drive/folders/1EGlIP_29PHieV7T4WJg1gvQe0EjsFjgA";
+            };
+        }
+    </script>
+</body>
+</html>
